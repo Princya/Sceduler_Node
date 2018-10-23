@@ -24,10 +24,15 @@ router.get('/data', (req, res) => {
 
 const printValue = () => {
     var data = [];
-    for(var i = 0; i<=50; i++){
-        console.log('hello'+i);
+    var inner = [];
+    for(var i = 0; i<=1000; i++){
+       // console.log('hello'+i);
+       /* for(var j = 0; j< 1000; i++){
+            inner.push(j);
+        }*/
+        console.log("in data"+i);
         data.push('hello'+i);
     }
-    return data;
+    console.log(data.length);
 }
 module.exports = router;
